@@ -9,6 +9,8 @@ buttons.forEach(button => {
         buttons.forEach(btn => btn.classList.remove("active"));
         contents.forEach(content => content.classList.remove("active"));
 
+        button.classList.add("active");
+
         const tab = button.dataset.tab;
         document.getElementById(tab).classList.add("active");
     });
