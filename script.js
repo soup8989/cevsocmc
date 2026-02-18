@@ -1,11 +1,13 @@
-function openTab(evt, tabName) {
-    var i, tabContent, tabLinks
+const buttons = document.querySelectorAll(".tab-btn");
+const contents = document.querySelector(".content");
 
-    tabContent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabContent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        buttons.forEach(btn => btn.classList.remove("active"));
+        buttons.forEach(content => content.classList.remove("active"));
+        button.classList.add("active");
 
-    tabLinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tabLinks)
-}
+        const tab = button.dataset.tab;
+        document.getElementById(tab).classList.add("active");
+    });
+});
