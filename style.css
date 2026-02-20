@@ -61,14 +61,16 @@ body {
   display:block;
 }
 
-.content-header{
+.home-header{
   display:flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
-.content-header > div {
+.home-header > div {
   margin: 70px;
 }
 
@@ -89,7 +91,14 @@ body {
   font-size:20px;
 }
 
-
+.home-body {
+  display:flex;
+  flex-direction:row;
+  padding-left:15%;
+  padding-right:15%;
+  align-items:center;
+  justify-content: center;
+}
 
 div.flex-container {
   display: flex;
@@ -102,8 +111,25 @@ div.flex-container {
   color: white;
   margin: 10px;
   padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 div.flex-container > div {
   margin:10px;
+}
+
+
+
+/* BINGO */
+
+.bingo-board {
+  border: solid red;
+  margin: 50px;
+  width: 70%;
+  height: 400px;
+  justify-self: center;
+  display:grid;
+  grid-column: 5;
+  grid-row: 5;
 }
